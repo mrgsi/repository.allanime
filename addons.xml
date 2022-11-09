@@ -176,7 +176,7 @@ Changelog 0.0.6:
   </extension>
 </addon>
     
-<addon id="plugin.video.otaku" name="Otaku" provider-name="TeamOtaku" version="0.2.34">
+<addon id="plugin.video.otaku" name="Otaku" provider-name="TeamOtaku" version="0.2.35">
   <requires>
     <!-- <import addon="xbmc.python" version="2.24.0"/> -->
     <import addon="script.module.beautifulsoup4" version="4.5.3" />
@@ -201,13 +201,13 @@ Changelog 0.0.6:
       <fanart>fanart.jpg</fanart>
     </assets>
     <news>
-Changelog 0.2.34 [20221107]:
-- Fixes error on mal watchlist playback
+Changelog 0.2.35 [20221108]:
+-  Improve alldebrid cache check
     </news>
   </extension>
 </addon>
     
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.6.7" provider-name="doko">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.7.1" provider-name="doko">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.six"/>
@@ -216,21 +216,7 @@ Changelog 0.2.34 [20221107]:
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
-[B]0.6.7:[/B]
-- Small fix for thumbnail replace
-
-[B]0.6.6:[/B]
-- Fix thumbnails
-
-[B]0.6.5:[/B]
-- Changed user agent
-
-[B]0.6.4:[/B]
-- Changed site to new domain
-
-[B]0.6.3:[/B]
-- Fixed Cloudflare TLS issue</news>
+        <summary lang="en">WatchNixtoons2</summary>
         <description lang="en">
 Watch cartoons and anime from [COLOR orange][B]www.wcofun.net[/B][/COLOR].
 
@@ -239,11 +225,22 @@ Support the WatchCartoonOnline website with a PayPal donation to:
 
 Add-on originally by doko.
         </description>
+        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
+		<language>en</language>
+        <platform lang="en">all</platform>
+        <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.7.1:[/B]
+- Change Cloudflare detection
+
+[B]0.7.0:[/B]
+- Update User Agent
+- Small code clean-up
+- Change some default settings
+- Now has the ability to show show thumbnails in dubbed, subbed &amp; cartoons
+  - This needs to be enabled in the options</news>
 		<assets>
             <icon>icon.png</icon>
         </assets>
-        <platform lang="en">all</platform>
-        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
     </extension>
 </addon>
 
