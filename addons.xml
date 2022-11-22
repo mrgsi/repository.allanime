@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
-<addon id="repository.allanime" name="[COLOR aqua]All Anime Repository[/COLOR]" version="1.0.0" provider-name="G-Man">
+<addon id="repository.allanime" name="[COLOR aqua]All Anime Repository[/COLOR]" version="1.0.1" provider-name="G-Man">
 <extension point="xbmc.addon.repository" name="All Anime Repository">
     <dir>
         <info compressed="false">https://github.com/mrgsi/repository.allanime/raw/master/addons.xml</info>
         <checksum>https://github.com/mrgsi/repository.allanime/raw/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.allanime/master/</datadir>
+    </dir> 
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.wnt2/master/</datadir>
     </dir> 
 	<dir>
 		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
@@ -207,43 +212,4 @@ Changelog 0.2.35 [20221108]:
   </extension>
 </addon>
     
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.8.1" provider-name="WNT2">
-    <requires>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.six"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">WatchNixtoons2</summary>
-        <description lang="en">
-Watch cartoons and anime from [COLOR orange][B]www.wcofun.net[/B][/COLOR].
-
-Support the WatchCartoonOnline website with a PayPal donation to:
-[COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
-
-Add-on originally by doko.
-Random updates by lolage.
-        </description>
-        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
-		<language>en</language>
-        <platform lang="en">all</platform>
-        <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
-[B]0.8.1:[/B]
-- Fix Source decode site changes
-
-[B]0.8.0:[/B]
-- Update Thumbnail Hashes
-- Menus and Settings can now be translated
-- Fix PY3 issues for the old WNT2 scripts in settings
-- Changed default setting for the series thumbnails
-- Ongoing and Popular can now have thumbnails
-  - Requires to be enabled in settings</news>
-		<assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
-
 </addons>
