@@ -212,4 +212,29 @@ Changelog 0.2.35 [20221121]:
   </extension>
 </addon>
     
+<addon id="plugin.video.tatv2" version="1.0.3" name="Toonami Aftermath TV" provider-name="Lolage">
+  <requires>
+    <import addon="script.module.requests" />
+    <import addon="script.module.six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<news>
+[B]1.0.3:[/B]
+- Fix Streams again
+
+[B]1.0.2:[/B]
+- Change how the video is retrieved to fix PST stream</news>
+    <summary lang="en">Toonami Aftermath TV for Kodi</summary>
+    <description lang="en">Non-stop classic television programming featuring Toonami, Cartoon Cartoons and more!</description>
+    <disclaimer lang="en">A non-profit fan broadcast. No affiliation with cartoon network.</disclaimer>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+    
 </addons>
