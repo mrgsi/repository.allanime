@@ -181,7 +181,32 @@ Changelog 0.0.6:
   </extension>
 </addon>
     
-<addon id="plugin.video.otaku" name="Otaku" provider-name="TeamOtaku" version="0.2.36">
+<addon id="plugin.video.tatv2" version="1.0.3" name="Toonami Aftermath TV" provider-name="Lolage">
+  <requires>
+    <import addon="script.module.requests" />
+    <import addon="script.module.six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+<news>
+[B]1.0.3:[/B]
+- Fix Streams again
+
+[B]1.0.2:[/B]
+- Change how the video is retrieved to fix PST stream</news>
+    <summary lang="en">Toonami Aftermath TV for Kodi</summary>
+    <description lang="en">Non-stop classic television programming featuring Toonami, Cartoon Cartoons and more!</description>
+    <disclaimer lang="en">A non-profit fan broadcast. No affiliation with cartoon network.</disclaimer>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+    
+<addon id="plugin.video.otaku" name="Otaku" provider-name="TeamOtaku" version="0.2.37">
   <requires>
     <!-- <import addon="xbmc.python" version="2.24.0"/> -->
     <import addon="script.module.beautifulsoup4" version="4.5.3" />
@@ -206,34 +231,9 @@ Changelog 0.0.6:
       <fanart>fanart.jpg</fanart>
     </assets>
     <news>
-Changelog 0.2.35 [20221121]:
--  New Context menu: trakt correction
+Changelog 0.2.37 [20230104]:
+-  Use alternate Animix site
     </news>
-  </extension>
-</addon>
-    
-<addon id="plugin.video.tatv2" version="1.0.3" name="Toonami Aftermath TV" provider-name="Lolage">
-  <requires>
-    <import addon="script.module.requests" />
-    <import addon="script.module.six" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="main.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-<news>
-[B]1.0.3:[/B]
-- Fix Streams again
-
-[B]1.0.2:[/B]
-- Change how the video is retrieved to fix PST stream</news>
-    <summary lang="en">Toonami Aftermath TV for Kodi</summary>
-    <description lang="en">Non-stop classic television programming featuring Toonami, Cartoon Cartoons and more!</description>
-    <disclaimer lang="en">A non-profit fan broadcast. No affiliation with cartoon network.</disclaimer>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
   </extension>
 </addon>
     
